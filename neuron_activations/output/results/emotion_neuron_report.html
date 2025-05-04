@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Neuron Analysis Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #2c3e50; }
+        h2 { color: #3498db; margin-top: 30px; }
+        h3 { color: #2980b9; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+        tr:hover { background-color: #f5f5f5; }
+        .emotion { font-weight: bold; }
+        .neuron { font-family: monospace; }
+        .score { text-align: right; }
+    </style>
+</head>
+<body>
+    <h1>Emotion Neuron Analysis Report</h1>
+<p>This report analyzes neurons that activate distinctly for specific emotions across 1 layers.</p><h2>Top Neurons by Emotion</h2><h3 class="emotion">Anger</h3><table><tr><th>Layer</th><th>Top Neurons</th><th>Activation Scores</th></tr><tr><td>final_layer</td><td class="neuron">N496, N36, N430, N703, N351</td><td class="score">5.537, 3.063, 1.871, 0.396, 0.384</td></tr></table><h3 class="emotion">Joy</h3><table><tr><th>Layer</th><th>Top Neurons</th><th>Activation Scores</th></tr><tr><td>final_layer</td><td class="neuron">N479, N408, N361, N167, N707</td><td class="score">0.830, 0.340, 0.318, 0.293, 0.229</td></tr></table><h3 class="emotion">Sadness</h3><table><tr><th>Layer</th><th>Top Neurons</th><th>Activation Scores</th></tr><tr><td>final_layer</td><td class="neuron">N314, N442, N430, N627, N6</td><td class="score">1.084, 0.821, 0.739, 0.423, 0.330</td></tr></table><h2>Tuning Recommendations</h2><p>Based on the analysis, here are neurons you might consider focusing on for emotion tuning:</p><h3 class="emotion">Anger</h3><ul><li>Best layer: <strong>final_layer</strong></li><li>Primary neuron: <strong>Neuron 496</strong> (score: 5.537)</li><li>Recommended neurons to amplify: N496 (5.537), N36 (3.063), N430 (1.871)</li></ul><h3 class="emotion">Joy</h3><ul><li>Best layer: <strong>final_layer</strong></li><li>Primary neuron: <strong>Neuron 479</strong> (score: 0.830)</li><li>Recommended neurons to amplify: N479 (0.830), N408 (0.340), N361 (0.318)</li></ul><h3 class="emotion">Sadness</h3><ul><li>Best layer: <strong>final_layer</strong></li><li>Primary neuron: <strong>Neuron 314</strong> (score: 1.084)</li><li>Recommended neurons to amplify: N314 (1.084), N442 (0.821), N430 (0.739)</li></ul></body>
+</html>
